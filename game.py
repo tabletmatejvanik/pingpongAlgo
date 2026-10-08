@@ -1,4 +1,4 @@
-```python
+
 import pygame
 from random import choice
 
@@ -42,8 +42,12 @@ small_font = pygame.font.SysFont("consolas", 22, bold=True)
 # BALL IMAGE
 # =========================================================
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 ball_image = pygame.image.load(
-    "tennis.png"
+    os.path.join(BASE_DIR, "tenis_ball.png")
 ).convert_alpha()
 
 BALL_SIZE = 40
@@ -499,4 +503,3 @@ while run:
 
 
 pygame.quit()
-```
