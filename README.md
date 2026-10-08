@@ -1,1 +1,3 @@
 # pingpongAlgo
+
+Prototyp hry PingPong
